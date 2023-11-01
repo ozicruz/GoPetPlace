@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url(https://s1.1zoom.me/big0/485/Cats_Dogs_Colored_background_Lying_down_Poodle_572003_1280x853.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+/* Home text formatting */
+.home {
+
+    /* Move the text downwards */
+    margin-top: 100px;
+
+    /* Align the text to the center from left to right */
+    text-align: center;
+}
