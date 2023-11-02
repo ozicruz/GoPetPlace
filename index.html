@@ -3,14 +3,13 @@
 <!-- Set the language to be used in the page, in this case, Brazilian Portuguese -->
 <html lang="pt-br">
   <head>
-
     <!-- Configure standard page text interpretation -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <!-- Set the title of the page -->
     <title>GoPetPlace</title>
-    
+
     <!-- Import Bootstrap into the project -->
     <link
       rel="stylesheet"
@@ -21,88 +20,100 @@
 
     <!-- Import the local CSS configuration file -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+    <!-- import icons -->
   </head>
+
+
 
 
   <body>
 
     <!-- Navbar -->
-    <section>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">GoPetPlace</a>
+    <section class="header">
+      <nav class="navbar navbar-expand-lg">
+        <table class="active">
+          <tr>
+            <td id="go"> GO</td>
+            <td id="pet"> PET</td>
+            <td id="place">PLACE</td>
+          </tr>
+        </table>
 
-            <!-- Button to colapse NavBar elements when screen resolution is too low -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+        <!-- Button to colapse NavBar elements when screen resolution is too low -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Alterna navegação"
+        >
+        <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <!-- Here the contents of the NavBar are defined and they are assigned to the needed classes, so they handle either desktop or mobile screens (as a colapsed element) -->
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <!-- This line is used to add a hover and selected behavior to the elements of the NavBar -->
-                <a class="nav-item nav-link active" href="#"><span class="sr-only"></span></a>
+        <!-- Here the contents of the NavBar are defined and they are assigned to the needed classes, so they handle either desktop or mobile screens (as a colapsed element) -->
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <!-- This line is used to add a hover and selected behavior to the elements of the NavBar -->
+            <a class="nav-item nav-link active" href="#"
+              ><span class="sr-only"></span
+            ></a>
 
-                <!-- NavBar elements -->
-                <a class="nav-item nav-link" href="#">Sobre</a>
-                <a class="nav-item nav-link" href="#">Seja um Pet Sitter</a>
-                <a class="nav-item nav-link" href="#">Login</a>
-              </div>
-            </div>
-          </nav>
+            <!-- NavBar elements -->
+            <a class="nav-item nav-link" href="#">Sobre</a>
+            <a class="nav-item nav-link" href="#">Seja um Pet Sitter</a>
+            <a class="nav-item nav-link" href="#">Registrar</a>
+            <a class="nav-item nav-link" href="#"
+              >Login &nbsp;<i class="fas fa-sign-in-alt"></i
+            ></a>
+          </div>
+        </div>
+      </nav>
     </section>
-
 
     <!-- Home -->
     <section class="home">
+      <div class="container">
+        <!-- Home text contents -->
+        <div class="home-text">
+          <!-- Home title and subtitle -->
+          <p style="font-size: 3em">Busque Um Pet Sitter</p>
+          <p style="font-size: 2em">E garanta o bem-estar do seu Pet!</p>
 
-        <div class="container">
-
-            <!-- Home text contents -->
-            <div class="home-bg">
-                <!-- Home title and subtitle -->
-                <p style="font-size: 3em;">Busque Um Pet Sitter</p>
-                <p style="font-size: 2em;">E garanta o bem-estar do seu Pet</p>
-
-                <button>Buscar</button>
-
-            </div>
-
+          <button type="button-home" class="btn btn-info btn-lg">Buscar</button>
+          <button type="button-home" class="btn btn-outline-info btn-lg">
+            O que é um Pet Sitter?
+          </button>
         </div>
+      </div>
     </section>
 
+    <!-- Library and scripts imports -->
 
-
-
-
-
-
-
-
-
-      <!-- Library and scripts imports -->
-
-      <!-- Include Jquery (client-server comunication) -->
-      <script
+    <!-- Include Jquery (client-server comunication) -->
+    <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
       crossorigin="anonymous"
-      ></script>
+    ></script>
 
-      <!-- Include popper script (Bootstrap dependency) -->
-      <script
+    <!-- Include popper script (Bootstrap dependency) -->
+    <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
       integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
       crossorigin="anonymous"
-      ></script>
+    ></script>
 
-      <!-- Include Bootstrap script (Bootstrap dependency/extra functionality) -->
-      <script
+    <!-- Include Bootstrap script (Bootstrap dependency/extra functionality) -->
+    <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
-      ></script>
+    ></script>
 
-      <!-- Include local JavaScript file -->
-      <script src="js/script.js"></script>
+    <!-- Include local JavaScript file -->
+    <script src="js/script.js"></script>
   </body>
 </html>
