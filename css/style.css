@@ -36,6 +36,7 @@ body {
   background-image: url(https://s1.1zoom.me/big0/485/Cats_Dogs_Colored_background_Lying_down_Poodle_572003_1280x853.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 
